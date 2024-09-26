@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
 import './App.scss'
+import React, { useEffect } from 'react';
 import Header from './pages/Header'
 import Main from './pages/Main'
 import Order from './pages/Order'
