@@ -23,8 +23,8 @@ export default function Header() {
             </div>
         </ol>
             <div id="mobile-nav" onClick={openMenu}>
-              <span id='open' className={open? 'active' : null}><i class="bi bi-list"></i></span>
-              <span id="close" className={open? 'active' : null}><i class="bi bi-x-lg"></i></span>
+              <span id='open' className={open? 'active' : null}><i className="bi bi-list"></i></span>
+              <span id="close" className={open? 'active' : null}><i className="bi bi-x-lg"></i></span>
               <div id="menu-mobile" className={open? 'active' : null}>
                   <ol id='ol-mobile'>
                     <li><a href="/">Home</a></li>
