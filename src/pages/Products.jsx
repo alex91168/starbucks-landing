@@ -61,8 +61,8 @@ export default function Products() {
     <div id='products-box'>
       <h1 id='prod-h1'>Welcome to Starbucks</h1>
       <div id='products-items'>
-        {products.map((product) => (
-          <div className='product-item'>
+        {products.map((product, index) => (
+          <div key={index} className='product-item'>
             <img src={product.image} alt="Copo starbucks" />
             <div id="product-desc">
               <h2>{product.title}</h2>
