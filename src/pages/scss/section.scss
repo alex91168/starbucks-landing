@@ -1,0 +1,63 @@
+@import './mediaquery';
+
+section {
+    display: flex;
+    width: 100%;
+    height: 767px;
+    align-items: center;
+    @include respond(small){
+        width: 100%;
+        height: 665px;
+    }
+    #section-container{
+        display: flex;
+        width: 100%;
+        height: 668px;
+        align-items: center;
+        justify-content: space-around;
+        @include respond(small){
+            width: 100%;
+            height: 585px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #section-text{
+            width: 424px;
+            height: 246px;
+            @include respond(small){
+                width: 350px;
+                height: 275px;
+                margin: 0 0 20px 0;
+            }
+            h1{
+                font-family: "Instrument Serif", serif;
+                font-style: italic;
+                font-size: 54px;
+                @include respond(small){
+                    font-size: 32px;
+                    padding: 20px 0;
+                }
+            }
+            p{
+                color: #918E8B;
+                font-family: "Figtree", sans-serif;
+            }
+        }
+        #section-img{
+            display: flex;
+            gap: 68px;
+            flex-direction: row;
+            @include respond(small){
+                gap: 20px;
+            }
+            img{
+                width: 408px;
+                height: 668px;
+                @include respond(small){
+                    width: 167px;
+                    height: 275px;
+                }
+            }
+        }
+    }
+}

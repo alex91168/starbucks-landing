@@ -1,0 +1,109 @@
+@import './mediaquery';
+
+.products-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    @include respond(small){
+        width: 100vw;
+        height: 2800px;
+    }
+    #products-box{
+        display: flex;
+        width: 1324px;
+        height: 711px;
+        flex-direction: column;
+        gap: 53px;
+        @include respond(small){
+            align-items: center;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-family: "instrument serif", serif;
+            font-size: 36px;
+            color: #322E2D;
+        }
+        #products-items{
+            display: flex;
+            width: 1320px;
+            height: 618px;
+            flex-direction: row;
+            gap: 39px;
+            @include respond(small){
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                height: 2800px;
+            }
+            .product-item{
+                display: flex;
+                flex-direction: column;
+                width: 303px;
+                height: 524px;
+                gap: 24px;
+                @include respond(small){
+                    width: 350px;
+                    height: 600px;
+                }
+                img{
+                    width: 299px;
+                    height: 353px;
+                    @include respond(small){
+                        width: 350px;
+                        height: 410px;
+                    }
+                }
+                #product-desc{
+                    display: flex;
+                    flex-direction: column;
+                    width: 303px;
+                    height: 147px;
+                    gap: 17px;
+                    h2{
+                        font-family: "Instrument Serif", serif;
+                        font-style: italic;   
+                        font-size: 26px;
+                        color: #373535;
+                    }
+                    p{
+                        color: #9F9C9A;
+                        font-family: "Figtree", sans-serif;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        #product-btn{
+            display: flex;
+            width: 100%;
+            height: 65px;
+            justify-content: center;
+            button{
+                display: flex;
+                width: 179px;
+                height: 65px;
+                border: none;
+                background-color: black;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                @include respond(small){
+                    width: 350px;
+                    height: 40px;
+                }
+                span{
+                    font-size: 16px;
+                    font-family: 'Figtree', sans-serif;
+                    color: white;
+                }
+            }
+            button:hover{
+                transform: scale(1.01);
+                box-shadow: 1px 1px 3px black;
+            }
+        }
+    }
+}

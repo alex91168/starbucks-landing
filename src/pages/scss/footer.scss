@@ -1,0 +1,110 @@
+@import './colors', './mediaquery';
+footer{
+    display: flex;
+    width: 100%;
+    height: 288px;
+    justify-content: space-around;
+    margin: 150px 0 0 0;
+
+    @include respond(small){
+        width: 100vw;
+        height: 582px;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 32px;
+    }
+    #footer-img{
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 200px;
+        justify-content: space-between;
+        @include respond(small){
+            height: 70px;
+            width: 70px;
+        }
+        img{
+            width: 96px;
+            height: 96px;
+            @include respond(small){
+                height: 70px;
+                width: 70px;
+            }
+        }
+        span{
+            font-size: 16px;
+            font-family: "Figtree", sans-serif;
+            color: #777473;
+            @include respond(small){
+                display: none;
+            }
+        }
+    }
+    #footer-nav{
+        display: flex;
+        width: 1006px;
+        height: 159px;
+        gap: 30px;
+        justify-content: space-around;
+        @include respond(small){
+            width: 326px;
+            height: 358px;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        ol{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            list-style-type: none;
+            @include respond(small){
+                width: 143px;
+                height: 159px;
+                gap: 0;
+            }
+            a{
+                text-decoration: none;
+                color: #777473;
+            }
+        }
+        .nav3-mobile{
+            display: none;
+            @include respond(small){
+                display: flex;
+                width: 326px;
+                height: 159px;
+            }
+        }
+        h3{
+            font-size: 17px;
+            font-weight: bold;
+            color: #777473;
+            @include respond(small){
+                font-size: 15px;
+            }
+        }
+        li{
+            font-size: 16px;
+            color: #777473;
+            cursor: pointer;
+            padding: 10px;
+            @include respond(small){
+                font-size: 15px;
+            }
+        }
+        li:hover, a:hover{
+            color: $color-green1;
+        }
+    }
+    #footer-text-mobile{
+        display: none;
+        @include respond(small){
+            display: flex;
+            font-size: 16px;
+            font-family: "Figtree", sans-serif;
+            color: #777473;
+        }
+    }
+}
